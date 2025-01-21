@@ -1,0 +1,30 @@
+.hero {
+    padding: 42px 0 0 74px;
+}
+
+.hero-flex {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.hero-section {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 0 12px;
+}
+
+.active {
+    color: var(--font-color-grey);
+    margin-left: 12px;
+}
+
+@media (max-width: 375px) {
+    .hero {
+        padding: 20px;
+    }
+
+    .hero-section {
+        font-size: 10px;
+    }
+}

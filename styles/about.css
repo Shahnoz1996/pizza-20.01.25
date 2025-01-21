@@ -1,0 +1,143 @@
+.about-title {
+    padding: 0 60px 85px 74px;
+    display: flex;
+    gap: 40px;
+}
+
+.about-img {
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+}
+
+.about-bottom {
+    margin-bottom: 52px;
+}
+
+.about-text {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 14px;
+    color: #373737;
+}
+
+.about-size {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: var(--font-color-grey);
+}
+
+.about-top {
+    display: flex;
+    padding: 3px;
+    width: 420px;
+    height: 39px;
+    border-radius: 30px;
+    background: #ECECEC;
+    margin-bottom: 24px;
+}
+
+.btn-about {
+    display: flex;
+    align-self: center;
+    width: 138px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: var(--bg-main);
+    border: 0;
+}
+
+.btn-active {
+    display: flex;
+    justify-content: center;
+    background-color: #ECECEC;
+}
+
+.btn-active:hover {
+    background-color: var(--bg-main);
+}
+
+.traditional {
+    display: flex;
+    justify-content: center;
+    background-color: #ECECEC;
+    width: 208px;
+}
+
+.subtle {
+    display: flex;
+    justify-content: center;
+    width: 208px;
+}
+
+.traditional:hover {
+    background-color: var(--bg-main);
+}
+
+.about-ingredients {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.ingredients {
+    padding: 12px 10px 10px 10px;
+}
+
+.ingredients:hover {
+    border: 1px solid #FE5F00;
+    border-radius: 15px;
+}
+
+.cheese-side {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 105px;
+    height: 32px;
+    margin-bottom: 5px;
+}
+
+.ruble {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-baskets {
+    width: 297px;
+    height: 55px;
+    border-radius: 18px;
+    background-color: var(--font-color-orange);
+    border: 0;
+}
+
+.baskets {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--bg-main);
+}
+
+@media (max-width: 375px) {
+    .about-title {
+        padding: 0 20px;
+    }
+
+    .about-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-baskets {
+        width: min(260px, 100%);
+    }
+
+    .none {
+        display: none;
+    }
+
+    .about-top {
+        width: 274px;
+    }
+}

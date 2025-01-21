@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/пицца-.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <title>home_profile</title>
+</head>
+<body>
+
+<div class="container">
+
+    <header class="header" aria-label="header">
+        <div class="content header_title">
+            <div class="header_top">
+                <div>
+                    <img src="assets/пицца-.png" class="header_pizza_img" alt="#" />
+                </div>
+                <div>
+                    <h1>NEXT PIZZA</h1>
+                    <p>вкусней уже некуда</p>
+                </div>
+            </div>
+            <label class="none">
+                <span class="overlay" id="overlay"></span>
+                <span class="popup" id="popup">
+                    <span class="burger">
+                        <img src="assets/img/image_2_input-removebg-preview.png" alt="#" />
+                        <p class="cheeseburger">Чизбургер-пицца <span class="color_grey">179₽</span></p>
+                    </span>
+                    <span class="burger">
+                        <img src="assets/img/image_2_input-removebg-preview.png" alt="#" />
+                        <p class="cheeseburger">Острая пицца-чизбургер <span class="color_grey">299₽</span></p>
+                    </span>
+                    <button class="close-btn" id="closePopup">Закрыть</button>
+                </span>
+                <img src="assets/img/Vector (6).png" class="img-vector" alt="#" />
+                <input type="text" id="openPopup" class="header_input" placeholder="Поиск пиццы..." />
+            </label>
+            <div class="flex">
+                <div class="toggle">
+                    <button id="toggleButton" class="button header_button_enter">
+                        <img src="assets/img/Group.png" alt="#" />
+                        <span class="header_button_text">Профиль</span>
+                    </button>
+                    <ul id="myList">
+                        <li>Настройки</li>
+                        <li>Заказы</li>
+                        <li>Выйти</li>
+                    </ul>
+                </div>
+                <button class="button button_shopping">
+                    <span class="header_manny">520 ₽</span>
+                    <span class="header_line"></span>
+                    <span>
+                        <img src="assets/img/iconfinder_shopping-cart_2561279 1.svg" alt="#"/>
+                    </span>
+                    <span class="header_manny">3</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <hr class="divider" aria-label="divider" />
+
+    <main>
+
+        <section class="hero">
+            <div class="content">
+                <div class="hero-flex">
+                    <h4 class="hero-section">Главная <span class="active"> / </span></h4>
+                    <h4 class="hero-section">Пиццы   <span class="active"> / </span> </h4>
+                    <h4 class="hero-section color_grey">Пепперони фреш</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="content">
+                <div class="about-title">
+                    <div>
+                        <img src="assets/img/Group 205.png" class="about-img" alt="#" />
+                    </div>
+                    <div>
+                        <h3 class="about-text">Пепперони фреш</h3>
+                        <h5 class="about-size">25 см, традиционное тесто 25, 380 г</h5>
+                        <div class="about-top">
+                            <button class="button btn-about">
+                                <span>Маленькая</span>
+                            </button>
+                            <button class="button btn-about btn-active">
+                                <span>Средняя</span>
+                            </button>
+                            <button class="button btn-about btn-active none">
+                                <span>Большая</span>
+                            </button>
+                        </div>
+                        <div class="about-top">
+                            <button class="button btn-about traditional">
+                                <span>Традиционное</span>
+                            </button>
+                            <button class="button btn-about  subtle">
+                                <span>Тонкое</span>
+                            </button>
+                        </div>
+                        <h3 class="about-ingredients">Ингредиенты</h3>
+                        <div class="flex about-bottom">
+                            <div class="ingredients">
+                                <img src="assets/img/image 10.png" alt="#" />
+                                <h5 class="cheese-side">Сырный бортик</h5>
+                                <h5 class="ruble">179 ₽</h5>
+                            </div>
+                            <div class="ingredients">
+                                <img src="assets/img/image 10 (1).png" alt="#" />
+                                <h5 class="cheese-side">Сливочная моцарелла</h5>
+                                <h5 class="ruble">79 ₽</h5>
+                            </div>
+                            <div class="ingredients">
+                                <img src="assets/img/image 10 (2).png" alt="#" />
+                                <h5 class="cheese-side">Сыры чеддер и пармезан</h5>
+                                <h5 class="ruble">79 ₽</h5>
+                            </div>
+                            <div class="ingredients">
+                                <img src="assets/img/image 10 (3).png" alt="#" />
+                                <h5 class="cheese-side">Нежный цыпленок</h5>
+                                <h5 class="ruble">79 ₽</h5>
+                            </div>
+                        </div>
+                        <button class="button btn-baskets">
+                            <span class="baskets">Добавить в корзину за 799₽</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="filter_right_bottom">
+            <h4 class="filter-text">Рекомендации</h4>
+            <div class="filter_right">
+                <div>
+                    <div class="filter_width">
+                        <div class="filter_bottom">
+                            <img src="assets/img/Group 67.png" alt="#" />
+                        </div>
+                        <h3 class="filters">Сырный цыпленок</h3>
+                        <div class="filter_chicken">Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, соус альфредо, чеснок</div>
+                        <div class="filter_between">
+                            <div class="filter_money">от <span class="money">395 ₽</span></div>
+                            <button class="button filter_button_collect">
+                                <img src="assets/img/Group (2).png" alt="#" />
+                                <span class="filter_collect">Собрать</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="filter_width">
+                        <div class="filter_bottom">
+                            <img src="assets/img/Group 67 (1).png" alt="#" />
+                        </div>
+                        <h3 class="filters">Диабло</h3>
+                        <div class="filter_chicken">Острая чоризо, острый перец халапеньо, соус барбекю, митболы, томаты, сладкий перец, красный лук, моцарелла</div>
+                        <div class="filter_between">
+                            <div class="filter_money">от <span class="money">449 ₽</span></div>
+                            <button class="button filter_button_collect">
+                                <img src="assets/img/Vector (2).png" alt="#" />
+                                <span class="filter_collect">Добавить</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="filter_width">
+                        <div class="filter_bottom">
+                            <img src="assets/img/Group 67 (2).png" alt="#" />
+                        </div>
+                        <h3 class="filters">Чизбургер-пицца</h3>
+                        <div class="filter_chicken">Мясной соус болоньезе, соус бургер, соленые огурчики, томаты, красный лук, моцарелла</div>
+                        <div class="filter_between">
+                            <div class="filter_money">от <span class="money">399 ₽</span></div>
+                            <div class="flex">
+                                <button class="button filter_button_rectangle rectangle">
+                                    <span class="color_orange"> - </span>
+                                </button>
+                                <div class="filter_number">1</div>
+                                <button class="button filter_button_rectangle rectangle">
+                                    <span class="color_orange"> + </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="filter_width">
+                        <div class="filter_bottom">
+                            <img src="assets/img/Group 67.png" alt="#" />
+                        </div>
+                        <h3 class="filters">Сырный цыпленок</h3>
+                        <div class="filter_chicken">Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, соус альфредо, чеснок</div>
+                        <div class="filter_between">
+                            <div class="filter_money">от <span class="money">395 ₽</span></div>
+                            <button class="button filter_button_collect">
+                                <img src="assets/img/Group (2).png" alt="#" />
+                                <span class="filter_collect">Собрать</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

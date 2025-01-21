@@ -1,0 +1,42 @@
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+}
+
+ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s;
+}
+
+ul li {
+    padding: 8px;
+    border-bottom: 1px solid #FFFAF6;
+}
+
+ul li:hover {
+    background: #FFFAF6;
+    color: #FE5F1E;
+}
+
+ul.show {
+    visibility: visible;
+    opacity: 1;
+    width: 130px;
+    border: 1px solid #F8F8F8;
+}
