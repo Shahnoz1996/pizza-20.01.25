@@ -31,3 +31,26 @@ button.addEventListener('click', () => {
 
     }
 });
+
+
+
+
+const popup1 = document.getElementById('popup1');
+const close = document.querySelector('.close');
+
+
+document.body.addEventListener('click', () => {
+    popup1.style.display = 'flex';
+});
+
+
+close.addEventListener('click', (e) => {
+    e.stopPropagation();
+    popup1.style.display = 'none';
+});
+
+popup1.addEventListener('click', (e) => {
+    if (e.target === popup1) {
+        popup1.style.display = 'none';
+    }
+});
