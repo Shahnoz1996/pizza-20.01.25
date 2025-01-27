@@ -80,14 +80,15 @@
             </div>
         </section>
 
-        <section id="popup1" class="popup-body">
-            <div class="popup-content">
-                <div class="popup-img">
+        <div class="modal-overlay" id="modal1Overlay"></div>
+        <div class="modal" id="modal1">
+            <div class="flex">
+                <div class="modal-img">
                     <img src="assets/img/Group 188.png" alt="#" />
                 </div>
-                <div class="popup-right">
+                <div class="modal-right">
                     <div>
-                        <h3 class="popup-text">Пепперони фреш</h3>
+                        <h3 class="modal-text">Пепперони фреш</h3>
                         <h5 class="about-size">25 см, традиционное тесто 25, 380 г</h5>
                         <div class="about-top">
                             <button class="button btn-about">
@@ -108,31 +109,83 @@
                                 <span>Тонкое</span>
                             </button>
                         </div>
-                        <h3 class="about-ingredients popup-bottom">Добавить по вкусу</h3>
-                        <div class="flex about-bottom popup-top">
-                            <div class="ingredients popup-ingredients">
+                        <h3 class="about-ingredients modal-bottom">Добавить по вкусу</h3>
+                        <div class="flex about-bottom modal-top">
+                            <div class="ingredients modal-ingredients">
                                 <img src="assets/img/image 10.png" alt="#" />
                                 <h5 class="cheese-side">Сырный бортик</h5>
                                 <h5 class="ruble">179 ₽</h5>
                             </div>
-                            <div class="ingredients popup-ingredients">
+                            <div class="ingredients modal-ingredients">
                                 <img src="assets/img/image 10 (1).png" alt="#" />
                                 <h5 class="cheese-side">Сливочная моцарелла</h5>
                                 <h5 class="ruble">79 ₽</h5>
                             </div>
-                            <div class="ingredients popup-ingredients">
+                            <div class="ingredients modal-ingredients">
                                 <img src="assets/img/image 10 (2).png" alt="#" />
                                 <h5 class="cheese-side">Сыры чеддер и пармезан</h5>
                                 <h5 class="ruble">79 ₽</h5>
                             </div>
                         </div>
-                        <button class="button btn-baskets close">
+                        <button class="button btn-baskets close" id="toModal2">
                             <span class="baskets">Добавить в корзину за 799₽</span>
                         </button>
                     </div>
                 </div>
             </div>
-        </section>
+
+        </div>
+
+        <div class="modal-overlay" id="modal2Overlay"></div>
+        <div class="modal" id="modal2">
+            <div class="modal1">
+                <div class="js_content modal-bottom">
+                    <div>
+                        <div class="modal-text">Вход в аккаунт</div>
+                        <div class="modal-number">Введите номер телефона, чтобы войти или зарегистрироваться</div>
+                    </div>
+                    <div>
+                        <img src="assets/img/image 9.png" class="modal-img9" alt="#" />
+                    </div>
+                </div>
+                <input type="text" class="modal-input" placeholder="+7 (921) XXX-XX-XX" />
+                <button class="button btn-baskets close" id="toModal3">
+                    <span class="baskets">Получить код в SMS</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modal3Overlay"></div>
+        <div class="modal" id="modal3">
+            <div class="modal1">
+                <div class="js_content modal-bottom">
+                    <div>
+                        <div class="modal-text">Введите код</div>
+                        <div class="modal-number">SMS-код был отправлен на номер телефона +7 (921) 450-20-25</div>
+                    </div>
+                    <div>
+                        <img src="assets/img/image 9-copy.png" class="modal-img9" alt="#" />
+                    </div>
+                </div>
+                <div class="modal-button">
+                    <button class="button btn-modal">
+                        <span class="btn-text">4</span>
+                    </button>
+                    <button class="button btn-modal">
+                        <span class="btn-text">1</span>
+                    </button>
+                    <button class="button btn-modal color-orange">
+                        <span class="btn-text grey-color"></span>
+                    </button>
+                    <button class="button btn-modal">
+                        <span class="btn-text grey-color"> • </span>
+                    </button>
+                </div>
+                <button class="button btn-request-code" id="closeAll">
+                    <span class="baskets">Запросить код — через 28 сек.</span>
+                </button>
+            </div>
+        </div>
 
         <section class="about">
             <div class="content">
